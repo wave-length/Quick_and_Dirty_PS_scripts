@@ -26,7 +26,7 @@ if ($Files -eq $null) {
     foreach ($file in $Files) {
         Write-Host "Importing $file"
         Copy-Item $file passwords.csv -force
-        .\PasswordUpload.txt config.ini | Out-File -FilePath $LogFile -append
+        .\PasswordUpload.exe config.ini | Out-File -FilePath $LogFile -append
         Write-Host "Moving $file to ARCHIVE directory"
         Move-Item $file ./ARCHIVE/ -force
     }
