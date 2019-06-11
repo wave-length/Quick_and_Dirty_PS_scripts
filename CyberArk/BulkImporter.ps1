@@ -1,3 +1,8 @@
+#
+# Script to import multiple properly formatted password files into CyberArk
+# Requirements: PasswordUpload.exe configuration file must be named config.ini
+#
+
 Clear-Host
 Write-Host "CyberArk Bulk Password Import Script`r`nCopyright 2018`r`n"
 
