@@ -1,4 +1,4 @@
-﻿#
+#
 # CyberArk Replication Status reporter (public version)
 # This quick and dirty script can be run on your CyberARK DR vault to check the logs for failures.
 #
@@ -13,7 +13,7 @@ $EmailBCCAddress = ""
 $SMTPServer = ""
 
 #
-# This for loop convers the logs in array format to a continuous string so that they can be added to the body of the notification email...
+# This for loop converts the log events in array format to a continuous string so that they can be added to the body of the notification emails...
 #
 foreach ($line in $PADRLogEvents) {
    $PADRLogString = $PADRLogString + "`n" + $line
